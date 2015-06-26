@@ -23,6 +23,7 @@ type Invoice struct {
 	Currency string `xml:"currency,omitempty"`
 	CreatedAt *time.Time `xml:"created_at,omitempty"`
 	LineItems []LineItems `xml:"line_items,omitempty"`
+	ClosedAt *time.Time `xml:"closed_at,omitempty"`
 	//Transactions []Transaction `xml:"transactions,omitempty"`
 }
 
